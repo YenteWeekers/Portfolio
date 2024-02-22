@@ -112,7 +112,7 @@ body{
 
 .aboutMe{
     display: grid;
-    grid-template-columns: 10vh 40vw 50vw;
+    grid-template-columns: 24vh 45vw 30vw;
     grid-template-rows: 5vh 95vh ;
     grid-template-areas: ". . ."
     ". content pictures";
@@ -120,19 +120,20 @@ body{
 .info{
     grid-area: content;
     display: flex;
-    align-items: center;
     justify-content: center;
     flex-direction: column;
-    gap: 44px;
+    gap: 24px;
 
 
 }
 .info h3{
-    max-width: 450px;
-    text-align: justify;
+    max-width: 500px;
+    font-size: 18px;
+    font-weight: lighter;
 }
 .info h1{
-    font-size: 40px;
+    font-size: 39px;
+    font-weight: lighter;
 }
 
 
@@ -315,32 +316,40 @@ input[type=radio]:checked {
     clip-path: polygon(35% 0%, 35% 0%, 100% 20%, 100% 100%, 0% 100%, 0% 15%);
     display: flex;
     justify-content: space-evenly;
+    color:#fff;
+    font-family: "Sulphur Point", sans-serif;
 }
 .kleurHoek h1{
-    margin-left: 34%;
-    font-family:Arial;
-    font-size:28px;
-    color:#fff;
+    font-size:30px;
     text-transform:uppercase;
     letter-spacing:2px;
-    max-width: 500px;
+    font-weight: lighter;
 }
-.kleurHoek h3{
-    margin-top: 15px;
-    font-size:13px;
+.kleurHoek h2{
+    font-size:18px;
     letter-spacing:2px;
     font-weight: lighter;
-    color:#fff;
-    /*max-width: 25vw;*/
-    text-align: center;
 }
+.kleurHoek h3{
+    margin-top: 34px;
+    font-size:13px;
+    letter-spacing:1px;
+    /*max-width: 25vw;*/
+    font-weight: lighter;
+}
+
 
 .schooll{
-    margin-top: 100px;
-    max-width: 28vw;
-
+    margin-top: 180px;
+    max-width: 600px;
+    border-left: white solid 1px;
+    padding-left: 30px;
+    height: 350px;
 }
 .dromen{
-    margin-top: 100px;
-    max-width: 28vw;
+    margin-top: 180px;
+    max-width: 600px;
+    border-left: white solid 1px;
+    padding-left: 30px;
+    height: 350px;
 }
