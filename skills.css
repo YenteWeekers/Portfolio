@@ -127,7 +127,7 @@ body {
 }
 .backGround_img{
     background-image:linear-gradient(-90deg, rgba(131, 150, 159, 0.02) 0%, rgba(131, 150, 159, 0.86) 67.96%, rgb(131, 150, 159) 100%),
-    url('Img/ikopfiets.jpg');
+    url('../Img/ikopfiets.jpg');
     background-repeat: no-repeat;
     height: 450px;
     background-size: cover;
@@ -136,7 +136,7 @@ body {
 }
 .tekstIntro{
     position: absolute;
-    padding: 60px;
+    padding: 60px 116px;
 }
 
 .tekstIntro h2{
@@ -145,7 +145,7 @@ body {
     padding: 5px;
 }
 .tekstH3{
-    color: #235b58;
+    color: #000000;
     padding: 5px;
     width: 800px;
 }
@@ -159,7 +159,7 @@ body {
     font-weight: bold;
     color: #ffffff;
     position: absolute;
-    left: 90px;
+    left: 154px;
     padding: 7px;
     max-width: 567px;
 }
@@ -193,7 +193,8 @@ body {
 }
 .softSkills_head{
     font-size: 20px;
-    font-weight: normal;
+    font-weight: lighter;
+    padding-bottom: 5px;
 }
 .softRating{
     display: flex;
@@ -245,7 +246,7 @@ body {
     height: var(--rating-size);
 
     /* Basic style for the text */
-    font-size: calc(var(--rating-size) / 3);
+    font-size: calc(var(--rating-size) / 4);
     line-height: 1;
 }
 
@@ -470,7 +471,7 @@ body {
     background-color: #83969F;
 }
 .ratingPercen.dutch{
-   width: 250px;
+    width: 250px;
 }
 .ratingPercen.english{
     width: 190px;
@@ -545,9 +546,14 @@ body {
     background-color: #000000;
 }
 .hardInfo_rating.HTML{
-   width: 398px;
+    width: 455px;
 }
-
+.hardInfo_rating.CSS{
+    width: 440px;
+}
+.hardInfo_rating.JS{
+    width: 405px;
+}
 
 
 
