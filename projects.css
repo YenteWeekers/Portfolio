@@ -427,7 +427,7 @@ input[type=radio]:checked {
     height: 90vh;
     display: flex;
     background-image:linear-gradient(-90deg, rgba(32, 37, 41, 0.11) 0%, rgba(32, 37, 41, 0.54) 67.96%, rgba(32, 37, 41, 0.84) 100%),
-    url('Img/Background_Dragongame.gif');
+    url('../Img/Background_Dragongame.gif');
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -501,61 +501,60 @@ input[type=radio]:checked {
 }
 .Goal_text h2{
     font-size: 35px;
-    padding-bottom: 35px;
-    font-weight: lighter;
+    padding-bottom: 35px;;
     font-family: "Sulphur Point", sans-serif;
 
 }
 .Goal_text h3{
-    font-size: 20px;
-    font-family: "Sulphur Point", sans-serif;
+    line-height: 28px;
+    max-width: 1090px;
+    font-family: Sulphur Point;
     font-size: medium;
 }
 
+
+
 /*Player*/
 .Player{
-    background-color: #ff0000;
+    background-color: #ffffff;
+    padding-bottom: 35px;
 }
 .end{
     width: 714px;
 }
 
 .body_player{
-    display: flex;
+    display: grid;
+    grid-template-columns: 78px 913px 73px 385px;
+    grid-template-rows: 132px 15px 53px 265px;
+    grid-template-areas:". first first first " ". . . ." ". second . imgat" ". second imgwin .";
 }
 .first_textPlayer{
     line-height: 28px;
     max-width: 1090px;
-    margin: 15px 0 0 95px;
+    margin-top: 15px;
     font-family: Sulphur Point;
     font-size: medium;
+    grid-area: first;
 }
 .second_textPlayer{
     max-width: 750px;
     line-height: 28px;
-    margin: 20px 0 50px 95px;
     font-family: Sulphur Point;
     font-size: medium;
+    grid-area: second;
 }
-.player_knightImg{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 675px;
-}
+
 .img_attack{
     width: 271px;
     height: 252px;
-    position: absolute;
+    grid-area: imgat;
 }
 
 .img_attackWin{
     z-index: 1;
-    left: 966px;
-    position: absolute;
     transform: scaleX(-1);
-    top: 2740px;
+    grid-area: imgwin;
 }
 
 
@@ -564,13 +563,32 @@ input[type=radio]:checked {
 
 /*enemy*/
 .Enemy{
-    height: 100vh;
-    width: 100vw;
     background-color: #ffffff;
 }
 .end_enemy{
     width: 1030px;
 }
+.body_enemy{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    padding-bottom: 100px;
+}
+.enemy_text h3{
+    line-height: 28px;
+    max-width: 800px;
+    margin-top: 15px;
+    font-family: Sulphur Point;
+    font-size: medium;
+}
+.enemy_gif img{
+    width: 539px;
+    height: 307px;
+    object-fit: cover;
+}
+
+
 
 /*Uniqe*/
 .Unique{
@@ -580,6 +598,32 @@ input[type=radio]:checked {
     /*background-image: url("Img/PRO_DragonGame2D.gif");*/
     /*background-repeat: no-repeat;*/
 }
+
+
+.border .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    border: white solid 1px;
+    background-color: rgba(255, 255, 255, 0.49);
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    top: 43px;
+    left: 127%;
+}
+
+.mech:hover .tooltiptext {
+    visibility: visible;
+}
+.ani:hover .tooltiptext {
+    visibility: visible;
+}
+
+
+
 
 /*achtergrond*/
 .uniqe_background{
@@ -620,7 +664,7 @@ input[type=radio]:checked {
     margin-top: 50px;
 }
 .uniqe_text h3{
-   font-size: 35px;
+    font-size: 35px;
     line-height: 35px;
     font-weight: lighter;
 }
