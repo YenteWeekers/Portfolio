@@ -29,7 +29,8 @@ body{
     left: 0;
     width: 100%;
     padding: 20px 10%;        /*20px how big the nav balk is and 10% is how far is stands from the side*/
-    background-color: rgba(237, 237, 237, 0.91);
+    background-color: rgb(237, 237, 237);
+    border-bottom: solid 2px #E7E7E7;
     display: flex;          /*set the home projects skills about me under Yente.*/
     justify-content: space-between ;    /*zet yente en rest uitelkaar en zet het op even veel aftand van zijkant als yente dus 10%*/
     align-items: center;
@@ -333,27 +334,39 @@ body{
 
 
 .slide1{
-    /*display: grid;*/
-    /*grid-template-columns: 25% 75%;*/
-    /*grid-template-areas: "left right";*/
     display: flex;
-    justify-content: space-between;
-    height: 680px;
-    align-items: center;
-
+    height: 363px;
 }
 
 .back{
     z-index: 10;
     width: 600px;
 }
+.back h4{
+    font-size:27px;
+    color:#fff;
+    text-transform:uppercase;
+    letter-spacing:2px;
+    padding: 40px 0 3px 60px;
+    font-weight: lighter;
+    transform: scaleY(1.05);
+}
+.back h5{
+    font-size:15px;
+    color:#ededed;
+    letter-spacing:2px;
+    padding: 0 0 80px 60px;
+    font-weight: lighter;
+    transform: scaleY(1.05);
+}
+
 .back h3{
-    max-width: 350px;
+    max-width: 400px;
     font-size:15px;
     color: #ededed;
     letter-spacing:2px;
     font-weight: lighter;
-    padding-left: 25px;
+    padding-left: 60px;
 }
 .back h2{
     max-width: 350px;
@@ -361,7 +374,7 @@ body{
     color: #ededed;
     letter-spacing:2px;
     font-weight: lighter;
-    padding-left: 25px;
+    padding-left: 60px;
     text-transform:uppercase;
     margin-bottom: 15px;
 }
@@ -372,7 +385,9 @@ body{
     text-transform:uppercase;
     letter-spacing:2px;
     max-width: 240px;
-    padding: 15px 0px 5px 25px;
+    padding: 15px 0px 5px 60px;
+    transform: scaleY(1.2);
+    font-weight: normal;
 }
 .omgeving {
     /*z-index: 1;*/
@@ -402,7 +417,7 @@ body{
     letter-spacing: 2px;
     z-index: 1;
     overflow: hidden;
-    margin: 25px 0 0 35px;
+    margin: 25px 0 0 65px;
 
 }
 
@@ -461,20 +476,23 @@ body{
     cursor: pointer;
 }
 .carousel_buttonR{
-    right: -40px;
+    isplay: flex;
+    margin: 245px 248px;
 }
 
 .carousel_buttonL{
-    left: -40px;
+    isplay: flex;
+    margin: 231px 90px;
+    transform: scaleX(-1);
 }
 
 .carousel_button img{
-    width: 12px;
+    width: 24px;
 }
 
 .carousel_nav{
     display: flex;
-    margin: -122px 120px;
+    margin: -102px 120px;
 }
 
 .carousel_indicator{

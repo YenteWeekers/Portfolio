@@ -191,6 +191,10 @@ body {
     gap: 50px;
     margin: 0 0 50px 0;
 }
+.softSkills_head{
+    font-size: 20px;
+    font-weight: normal;
+}
 .softRating{
     display: flex;
     align-items: center;
@@ -466,13 +470,13 @@ body {
     background-color: #83969F;
 }
 .ratingPercen.dutch{
-   width: 210px;
+   width: 250px;
 }
 .ratingPercen.english{
-    width: 180px;
+    width: 190px;
 }
 .ratingPercen.deutch{
-    width: 50px;
+    width: 30px;
 }
 
 
