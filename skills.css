@@ -127,7 +127,7 @@ body {
 }
 .backGround_img{
     background-image:linear-gradient(-90deg, rgba(131, 150, 159, 0.02) 0%, rgba(131, 150, 159, 0.86) 67.96%, rgb(131, 150, 159) 100%),
-    url('../Img/ikopfiets.jpg');
+    url('Img/ikopfiets.jpg');
     background-repeat: no-repeat;
     height: 450px;
     background-size: cover;

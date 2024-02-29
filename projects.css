@@ -427,7 +427,7 @@ input[type=radio]:checked {
     height: 90vh;
     display: flex;
     background-image:linear-gradient(-90deg, rgba(32, 37, 41, 0.11) 0%, rgba(32, 37, 41, 0.54) 67.96%, rgba(32, 37, 41, 0.84) 100%),
-    url('../Img/Background_Dragongame.gif');
+    url('Img/Background_Dragongame.gif');
     background-repeat: no-repeat;
     background-size: cover;
 }
