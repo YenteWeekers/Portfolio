@@ -514,7 +514,7 @@ input[type=radio]:checked {
 
 /*Player*/
 .Player{
-    background-color: #ffffff;
+    background-color: #ff0000;
 }
 .end{
     width: 714px;
