@@ -179,7 +179,7 @@ body{
     width: 130px;
     height: 100%;
     background: rgba(96, 118, 129, 0.9);
-    border: 3px solid rgba(96, 118, 129, 0.9);
+    border: 3px solid rgba(85, 103, 112, 0.9);
     border-radius: 11px;
     font-size: 15px;
     color: black;
@@ -188,15 +188,24 @@ body{
     letter-spacing: 1px;
     z-index: 1;
     overflow: hidden;
+    transition: .5s;
 }
-
+.seeMore a:hover{
+    color: rgba(96, 118, 129, 0.9);
+}
 
 .seeMore a:nth-child(2) {
     background: transparent;
     color: rgba(96, 118, 129, 0.9);
     font-size: 15px;
 }
+.seeMore a:nth-child(2):hover {
+    color: black;
+}
 
+.seeMore a:nth-child(2)::before{
+    background: rgba(96, 118, 129, 0.9);
+}
 
 .seeMore a::before{
     content:'';
@@ -205,7 +214,7 @@ body{
     left: 0;
     width: 0;
     height: 100%;
-    background-color:red ;
+    background-color: rgba(237, 237, 237, 0.93);
     z-index: -1;
     transition: .2s;
 }

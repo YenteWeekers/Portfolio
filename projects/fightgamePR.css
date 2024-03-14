@@ -1,0 +1,381 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Sulphur Point', sans-serif;
+}
+
+body{
+    background: rgba(35, 91, 88, 0.16);
+    /*background-color: #ededed;*/
+    color: black;
+    overflow-x: hidden;
+}
+
+
+/* Project 2*/
+.pro_Head{
+    padding: 0 82px 0 42px;
+    display: flex;
+    align-items: center;
+}
+.pro_Head h1{
+    font-size: 35px;
+}
+.pro_line{
+    height: 2px;
+    background-color: #70848E;
+    margin: 42px;
+}
+.start{
+    width: 118px;
+}
+
+
+/*Project*/
+.Project{
+    height: 90vh;
+    display: flex;
+    background-image:linear-gradient(-90deg, rgba(32, 37, 41, 0.11) 0%, rgba(32, 37, 41, 0.54) 67.96%, rgba(32, 37, 41, 0.84) 100%),
+    url('../Img/Background_Dragongame.gif');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.Project_Info{
+    background-color: #83969F;
+    height: 150px;
+    width: 901px;
+    left: 25px;
+    top: 535px;
+    padding: 30px 70px;
+    position: absolute;
+}
+
+.Game_date{
+    display: flex;
+    gap: 88px;
+    line-height: 35px;
+}
+
+.Game_date h3{
+    letter-spacing: 1.7px;
+    max-width: 180px;
+}
+.thick{
+    font-family: GT Walsheim,Arial,gadget,sans-serif;
+    letter-spacing: 0.6px;
+    line-height: 20px;
+}
+
+
+
+
+
+.headingCon{
+    background-color: white;
+    padding: 120px 75px 10px 55px;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+.headingLine{
+    width: 90px;
+    height: 2px;
+    background-color: black;
+}
+.headingText{
+    font-weight: normal;
+    line-height: 30px;
+}
+
+
+/*goal*/
+.Goal{
+    height: 100vh;
+    width: 100vw;
+    background-color: #ffffff;
+    padding: 90px;
+    display: flex;
+    gap: 167px;
+}
+.goal_assigment{
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+.Goal_text{
+    font-family: "Sulphur Point", sans-serif;
+    max-width: 677px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.Goal_text h2{
+    font-size: 35px;
+    padding-bottom: 35px;;
+    font-family: "Sulphur Point", sans-serif;
+
+}
+.Goal_text h3{
+    line-height: 28px;
+    max-width: 1090px;
+    font-family: Sulphur Point;
+    font-size: medium;
+}
+
+
+
+/*Player*/
+.Player{
+    background-color: #ffffff;
+    padding-bottom: 35px;
+}
+.end{
+    width: 714px;
+}
+
+.body_player{
+    display: grid;
+    grid-template-columns: 78px 913px 73px 385px;
+    grid-template-rows: 132px 15px 53px 265px;
+    grid-template-areas:". first first first " ". . . ." ". second . imgat" ". second imgwin .";
+}
+.first_textPlayer{
+    line-height: 28px;
+    max-width: 1090px;
+    margin-top: 15px;
+    font-family: Sulphur Point;
+    font-size: medium;
+    grid-area: first;
+}
+.second_textPlayer{
+    max-width: 750px;
+    line-height: 28px;
+    font-family: Sulphur Point;
+    font-size: medium;
+    grid-area: second;
+}
+
+.img_attack{
+    width: 271px;
+    height: 252px;
+    grid-area: imgat;
+}
+
+.img_attackWin{
+    z-index: 1;
+    transform: scaleX(-1);
+    grid-area: imgwin;
+}
+
+
+
+
+
+/*enemy*/
+.Enemy{
+    background-color: #ffffff;
+}
+.end_enemy{
+    width: 1030px;
+}
+.body_enemy{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    padding-bottom: 100px;
+}
+.enemy_text h3{
+    line-height: 28px;
+    max-width: 800px;
+    margin-top: 15px;
+    font-family: Sulphur Point;
+    font-size: medium;
+}
+.enemy_gif img{
+    width: 539px;
+    height: 307px;
+    object-fit: cover;
+}
+
+
+
+/*Uniqe*/
+.Unique{
+    height: 90vh;
+    width: 100vw;
+    background-color: #ffffff;
+    /*background-image: url("Img/PRO_DragonGame2D.gif");*/
+    /*background-repeat: no-repeat;*/
+}
+
+
+.border .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    border: white solid 1px;
+    background-color: rgba(255, 255, 255, 0.49);
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    top: 43px;
+    left: 127%;
+}
+
+.mech:hover .tooltiptext {
+    visibility: visible;
+}
+.ani:hover .tooltiptext {
+    visibility: visible;
+}
+
+
+
+
+/*achtergrond*/
+.uniqe_background{
+    height: 90vh;
+    width: 100vw;
+    object-fit: cover;
+    position: absolute;
+}
+
+.bg_zwart_uniqe{
+    height: 90vh;
+    width: 100vw;
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: 1;
+    position: absolute;
+}
+
+
+/*inhoud*/
+.uniqeCon{
+    display: grid;
+    grid-template-columns: 343px 102px 124px 260px 124px 118px 267px;
+    grid-template-rows: 97px 80px 131px 108px 100px 78px;
+    grid-template-areas: ". . . head head . ."
+" . . . . . . ." "h3 . . . . . round" ". . . . dragon . round" " . . knight . . . round";
+}
+
+.uniqe_headText{
+    color: white;
+    z-index: 2;
+    grid-area: head;
+}
+.uniqe_text{
+    color: white;
+    z-index: 2;
+    grid-area: h3;
+    padding-left: 57px;
+    margin-top: 50px;
+}
+.uniqe_text h3{
+    font-size: 35px;
+    line-height: 35px;
+    font-weight: lighter;
+}
+.uniqe_text h4{
+    font-size: 18px;
+    font-weight: lighter;
+}
+
+
+.knight_Img{
+    z-index: 11;
+    grid-area:knight ;
+}
+
+.dragon_Img{
+    transform: scaleX(-1);
+    z-index: 11;
+    grid-area: dragon;
+}
+
+
+.unique_rounds{
+    align-items: flex-end;
+    display: flex;
+    grid-area: round;
+}
+.border {
+    display: flex;
+    margin-bottom: -20px;
+    height: 53vh;
+    flex-direction: column;
+    align-items: self-end;
+    justify-content: flex-end;
+}
+.border img{
+    width: 65px;
+    height: 65px;
+    border: #EEEEEE 3px solid;
+    border-radius: 100px;
+    padding: 10px;
+    z-index: 15;
+}
+.mech {
+    right: -38%;
+    position: relative;
+}
+.ani{
+    right: -38%;
+    position: relative;
+}
+
+
+
+
+/*Feedback*/
+.Feedback{
+    padding-top: 60px;
+    width: 100vw;
+    background-color: #ffffff;
+}
+.end_feedback{
+    width: 1030px;
+}
+.feedback_tekst{
+    line-height: 28px;
+    max-width: 1290px;
+    margin: 15px 0 0 95px;
+}
+.feedback_tekst h3{
+    font-size: medium;
+}
+
+
+
+
+
+
+
+/*tech solutions*/
+.Teck_solutions{
+    padding-top: 90px;
+    height: 100vh;
+    width: 100vw;
+    background-color: #ffffff;
+}
+.end_teck_solutions{
+    width: 849px;
+}
+
+
+
+
+
+
+/*tech solutions*/
+.Learned{
+    padding-top: 90px;
+    height: 100vh;
+    width: 100vw;
+    background-color: #ffffff;
+}
+.end_learned{
+    width: 849px;
+}
