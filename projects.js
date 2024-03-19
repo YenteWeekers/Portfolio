@@ -1,48 +1,121 @@
-function pro1(){
-    closeall()
-    console.log(document.getElementById("infoProject1"));
-    document.getElementById("infoProject1").style.display = "grid"
-
-
-
-}
-function pro2(){
-    closeall()
-    document.getElementById("infoProject2").style.display = "block"
-
-
-}
-function pro3(){
-    closeall()
-    document.getElementById("infoProject3").style.display = "block"
-
-
-}
-function pro4(){
-    closeall();
-    document.getElementById("infoProject4").style.display = "block"
-
-
-}
-function pro5(){
-    closeall();
-    document.getElementById("infoProject5").style.display = "block"
-
-
+filterSelection("all")
+function filterSelection(c) {
+    var x, i;
+    x = document.getElementsByClassName("column");
+    if (c == "all") c = "";
+    for (i = 0; i < x.length; i++) {
+        w3RemoveClass(x[i], "show");
+        if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+    }
 }
 
-function closeall(){
+function w3AddClass(element, name) {
+    var i, arr1, arr2;
+    arr1 = element.className.split(" ");
+    arr2 = name.split(" ");
+    for (i = 0; i < arr2.length; i++) {
+        if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
+    }
+}
 
-    document.getElementById("infoProject1").style.display = "none"
-    document.getElementById("infoProject2").style.display = "none"
-    document.getElementById("infoProject3").style.display = "none"
-    document.getElementById("infoProject4").style.display = "none"
-    document.getElementById("infoProject5").style.display = "none"
-
+function w3RemoveClass(element, name) {
+    var i, arr1, arr2;
+    arr1 = element.className.split(" ");
+    arr2 = name.split(" ");
+    for (i = 0; i < arr2.length; i++) {
+        while (arr1.indexOf(arr2[i]) > -1) {
+            arr1.splice(arr1.indexOf(arr2[i]), 1);
+        }
+    }
+    element.className = arr1.join(" ");
 }
 
 
+// Add active class to the current button (highlight it)
+var btnContainer = document.getElementById("myBtnContainer");
+var btns = btnContainer.getElementsByClassName("btn");
+for (var i = 0; i < btns.length; i++) {
+    btns[i].addEventListener("click", function(){
+        var current = document.getElementsByClassName("active");
+        current[0].className = current[0].className.replace(" active", "");
+        this.className += " active";
+    });
+}
 
+
+
+
+
+// Function to set the first image as open upon page load
+window.onload = function() {
+    var firstImg = document.querySelector('.column img');
+    myFunction(firstImg);
+    myFunction2(firstImg);
+
+}
+
+function myFunction(imgs) {
+    var expandImg = document.getElementById("expandedImg");
+    var imgText = document.getElementById("imgtext");
+    expandImg.src = imgs.src;
+    imgText.innerHTML = imgs.alt;
+    expandImg.parentElement.style.display = "block";
+}
+
+
+
+function myFunction2(imgs) {
+    var expandImg = document.getElementById("expandedImg3");
+    var imgText = document.getElementById("imgtext");
+    expandImg.src = imgs.src;
+    imgText.innerHTML = imgs.alt;
+    expandImg.parentElement.style.display = "block";
+}
+
+
+// // Get the elements with class="column"
+// var elements = document.getElementsByClassName("column");
+//
+// // Declare a loop variable
+// var i;
+//
+// // Full-width images
+// function one() {
+//     for (i = 0; i < elements.length; i++) {
+//         elements[i].style.msFlex = "100%";  // IE10
+//         elements[i].style.flex = "100%";
+//     }
+// }
+//
+// // Two images side by side
+// function two() {
+//     for (i = 0; i < elements.length; i++) {
+//         elements[i].style.msFlex = "50%";  // IE10
+//         elements[i].style.flex = "50%";
+//     }
+// }
+//
+// // Four images side by side
+// function four() {
+//     for (i = 0; i < elements.length; i++) {
+//         elements[i].style.msFlex = "25%";  // IE10
+//         elements[i].style.flex = "25%";
+//     }
+// }
+//
+// // Add active class to the current button (highlight it)
+// var header = document.getElementById("myHeader");
+// var btns = header.getElementsByClassName("btn");
+// for (var i = 0; i < btns.length; i++) {
+//     btns[i].addEventListener("click", function() {
+//         var current = document.getElementsByClassName("active");
+//         current[0].className = current[0].className.replace(" active", "");
+//         this.className += " active";
+//     });
+// }
+//
+//
+//
 
 
 

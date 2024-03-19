@@ -224,7 +224,7 @@ body {
 :root {
     --rating-size: 60px;
     --bar-size: 6px;
-    --background-color: rgba(255, 255, 255, 0.73);
+    --background-color: rgb(255, 255, 255);
     --rating-color-default: rgba(0, 0, 0, 0.73);
     --rating-color-background: rgba(5, 39, 52, 0.66);
     --rating-color: rgba(255, 255, 255, 0.42);
@@ -240,10 +240,12 @@ body {
     border-radius: 100%;
     overflow: hidden;
 
-    background: var(--rating-color-default);
+    /*background: var(--rating-color-default);*/
     color: var(--rating-color-default);
     width: var(--rating-size);
     height: var(--rating-size);
+
+    background: conic-gradient(#586e76 87%, #9fadb1 0 100%) !important;
 
     /* Basic style for the text */
     font-size: calc(var(--rating-size) / 4);
