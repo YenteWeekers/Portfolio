@@ -30,14 +30,14 @@ body{
 }
 
 .eng-but{
-    margin-right: -155px;
+    margin-right: -95px;
 }
 .but{
     text-decoration: none;
     color: black;
 }
 .slesh{
-    margin-right: -155px;
+    margin-right: -95px;
 }
 .logo{
     font-size: 35px;
@@ -146,7 +146,7 @@ body{
     grid-area: pictures;
     position: relative;
     width: 288px;
-    height: 460px;
+    height: 400px;
     margin: 20vh auto;
     font-family: 'Helvetica Neue', sans-serif;
     perspective: 1400px;
@@ -240,15 +240,14 @@ input[type=radio]:checked {
 #s5:checked ~ #slide1 {
     box-shadow: 0 6px 10px rgba(0,0,0, 0.3), 0 2px 2px rgba(0,0,0, 0.2);
     transform: translate3d(20%, 0, -100px);
-
     left: -25%;
-    /*transform: translateX(-50%);*/
-    height: 420px;
+    /* transform: translateX(-50%); */
+    height: 323px;
     width: 200px;
     transform: rotate(3deg);
     opacity: 0.5;
     z-index: 1;
-    top: 25px;
+    top: 59px;
 }
 
 #s1:checked ~ #slide3,
@@ -271,16 +270,13 @@ input[type=radio]:checked {
 #s3:checked ~ #slide2,
 #s4:checked ~ #slide3,
 #s5:checked ~ #slide4 {
-    box-shadow: 0 6px 10px rgba(0,0,0, 0.3), 0 2px 2px rgba(0,0,0, 0.2);
+    0 6px 10px rgba(0,0,0, 0.3), 0 2px 2px rgba(0,0,0, 0.2);
     transform: translate3d(-20%, 0, -100px);
-
-    left: 50%;
-    /*transform: translateX(-50%);*/
-    /*!*height: 250px;*!*/
-    /*!*width: 380px;*!*/
-    opacity: 0.9;
+    left: 36%;
+    left: 37%;
+    m: translateX(-50%);
     z-index: 1;
-    height: 420px;
+    height: 359px;
     width: 300px;
     transform: rotate(-4deg);
     opacity: 0.5;
@@ -302,7 +298,15 @@ input[type=radio]:checked {
     /*!*height: 200px;*!*/
     /*!*width: 330px;*!*/
 }
-
+.maud{
+    object-position: -186px;
+}
+.len2{
+    object-position: -360px;
+}
+.len{
+    object-position: -152px;
+}
 
 
 

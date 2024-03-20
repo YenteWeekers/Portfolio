@@ -28,14 +28,14 @@ body{
 }
 
 .eng-but{
-    margin-right: -155px;
+    margin-right: -95px;
 }
 .but{
     text-decoration: none;
     color: black;
 }
 .slesh{
-    margin-right: -155px;
+    margin-right: -95px;
 }
 
 
@@ -319,9 +319,9 @@ body {
 .softeducation_timeline{
     display: grid;
     grid-template-columns: 140px 110px 15px 250px;
-    grid-template-rows: 100px 100px;
+    grid-template-rows: 25px 75px 25px 75px;
 
-    grid-template-areas: ". timeSint lineSint schoolSint" ". timeVaren lineVaren schoolVaren";
+    grid-template-areas: ". timeSint lineSint schoolSint" " . . . onderSint" ". timeVaren lineVaren schoolVaren" ". . . onderVaren";
 }
 /*timeline*/
 .timeLine{
@@ -349,7 +349,17 @@ body {
 .softEdu_point.varen{
     grid-area: lineVaren;
 }
-
+.onderZin{
+    margin-left: 12px;
+    font-size: 13px;
+    font-weight: 200;
+}
+.onderZin.varen {
+    grid-area: onderSint;
+}
+.onderZin.sint {
+    grid-area: onderVaren;
+}
 
 
 
@@ -476,11 +486,9 @@ body {
     width: 250px;
 }
 .ratingPercen.english{
-    width: 190px;
+    width: 140px;
 }
-.ratingPercen.deutch{
-    width: 30px;
-}
+
 
 
 
@@ -551,10 +559,10 @@ body {
     width: 455px;
 }
 .hardInfo_rating.CSS{
-    width: 440px;
+    width: 390px;
 }
 .hardInfo_rating.JS{
-    width: 405px;
+    width: 315px;
 }
 
 

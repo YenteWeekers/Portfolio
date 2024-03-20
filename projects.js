@@ -1,7 +1,10 @@
+
+
+
 filterSelection("all")
 function filterSelection(c) {
     var x, i;
-    x = document.getElementsByClassName("column");
+    x = document.getElementsByClassName("project_con");
     if (c == "all") c = "";
     for (i = 0; i < x.length; i++) {
         w3RemoveClass(x[i], "show");
@@ -36,42 +39,11 @@ var btnContainer = document.getElementById("myBtnContainer");
 var btns = btnContainer.getElementsByClassName("btn");
 for (var i = 0; i < btns.length; i++) {
     btns[i].addEventListener("click", function(){
-        var current = document.getElementsByClassName("active");
-        current[0].className = current[0].className.replace(" active", "");
-        this.className += " active";
+        var current = document.getElementsByClassName("on");
+        current[0].className = current[0].className.replace(" on", "");
+        this.className += " on";
     });
 }
-
-
-
-
-
-// Function to set the first image as open upon page load
-window.onload = function() {
-    var firstImg = document.querySelector('.column img');
-    myFunction(firstImg);
-    myFunction2(firstImg);
-
-}
-
-function myFunction(imgs) {
-    var expandImg = document.getElementById("expandedImg");
-    var imgText = document.getElementById("imgtext");
-    expandImg.src = imgs.src;
-    imgText.innerHTML = imgs.alt;
-    expandImg.parentElement.style.display = "block";
-}
-
-
-
-function myFunction2(imgs) {
-    var expandImg = document.getElementById("expandedImg3");
-    var imgText = document.getElementById("imgtext");
-    expandImg.src = imgs.src;
-    imgText.innerHTML = imgs.alt;
-    expandImg.parentElement.style.display = "block";
-}
-
 
 // // Get the elements with class="column"
 // var elements = document.getElementsByClassName("column");

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/html">
 <head>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -24,12 +24,32 @@
     <a class="but" href="homeNL.html">NL</a>
 </header>
 
+
+
+
+<div class="main">
+
+    <h1>PROJECTS</h1>
+    <hr>
+
+
+    <div id="myBtnContainer">
+        <button class="btn on" onclick="filterSelection('all')"> Show all</button>
+        <button class="btn" onclick="filterSelection('nature')"> web development</button>
+        <button class="btn" onclick="filterSelection('cars')"> game development</button>
+        <button class="btn" onclick="filterSelection('people')"> back-end</button>
+    </div>
+
+</div>
+
+
+
 <section class="projects_display">
     <div class="projectRow_con">
 
-        <div class="project_con">
+        <div class="project_con cars">
             <a href="projects/fightgamePR.html" >
-                <img src="Img/Background_Dragongame.gif" >
+                <img src="Img/Background_Dragongame.gif"  alt="cars"  >
                 <div class="project_conText">
                     <h1>Fight-game Slash</h1>
                     <p>Unity 2D game</p>
@@ -37,9 +57,9 @@
             </a>
         </div>
 
-        <div class="projectCon project_con">
+        <div class="projectCon project_con nature">
             <a href="projects/webshopPR.html" >
-                <img src="Img/ikopfiets.jpg"  class="image">
+                <img src="Img/ikopfiets.jpg" alt="cars"  class="image">
                 <div class="project_conText">
                     <h1>Eaves</h1>
                     <p>Webshop, HTML,CSS & JS</p>
@@ -48,13 +68,12 @@
         </div>
     </div>
 
-
-
-    <div class="container">
-
-    </div>
-
 </section>
+
+
+
+<!-- MAIN (Center website) -->
+
 
 <script src="projects.js"></script>
 </body>

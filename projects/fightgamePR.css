@@ -101,6 +101,7 @@ body{
 .goal_assigment{
     overflow-y: scroll;
     overflow-x: hidden;
+    max-width: 555px;
 }
 .Goal_text{
     font-family: "Sulphur Point", sans-serif;
@@ -121,7 +122,10 @@ body{
     font-family: Sulphur Point;
     font-size: medium;
 }
-
+.goal_assigment img{
+    height: auto;
+    width: 555px;
+}
 
 
 /*Player*/
@@ -256,7 +260,7 @@ body{
 .uniqeCon{
     display: grid;
     grid-template-columns: 343px 102px 124px 260px 124px 118px 267px;
-    grid-template-rows: 97px 80px 131px 108px 100px 78px;
+    grid-template-rows: 97px 0 131px 108px 100px 78px;
     grid-template-areas: ". . . head head . ."
 " . . . . . . ." "h3 . . . . . round" ". . . . dragon . round" " . . knight . . . round";
 }
