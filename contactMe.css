@@ -1,0 +1,145 @@
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f1f1f1;
+}
+* {box-sizing: border-box;}
+
+.back{
+    transform: scaleX(-1);
+    margin: 30px 0 0 30px;
+}
+
+
+
+.contactPage{
+    display: flex;
+    margin: 0 210px 45px 150px;
+    gap: 110px;
+}
+.contactInfo{
+    width: 1000px;
+}
+.contactInfo h2{
+    font-size: 17px;
+    font-family: "Sulphur Point", sans-serif;
+    max-width: 400px;
+    font-weight: normal;
+    margin-bottom: 20px;
+}
+.contactInfo h1{
+    font-size: 21px;
+    font-family: "Sulphur Point", sans-serif;
+    font-weight: bold;
+}
+.socials{
+    display: flex;
+    justify-content: right;
+    gap: 10px;
+}
+.contacts{
+    display: flex;
+    gap: 55px;
+}
+.contacts h2{
+    font-size: 15px;
+    font-family: "Sulphur Point", sans-serif;
+    width: 79px;
+}
+
+.cont{
+    display: flex;
+}
+.cont img{
+    margin: 14px 16px 0 0;
+}
+
+
+
+
+
+
+
+
+input[type=text], select, textarea {
+    padding-bottom: 12px;
+    border-bottom: 1px solid #000000;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+    background-color: #f1f1f1;
+    width: 100%;
+    color: black;
+    font-family: "Sulphur Point", sans-serif;
+}
+
+
+input textarea:focus-visible {
+    outline: none;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+    background-color: #f1f1f1;
+    width: 100%;
+}
+textarea:focus-visible {
+    outline: none;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+    background-color: #f1f1f1;
+    width: 100%;
+}
+
+input {
+    outline: none;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+    background-color: #f1f1f1;
+    width: 100%;
+}
+
+::placeholder {
+    color: #000000;
+    opacity: 1; /* Firefox */
+    font-family: "Sulphur Point", sans-serif;
+    font-weight: bold;
+}
+
+
+input[type=submit] {
+    background-color: rgba(241, 239, 239, 0);
+    color: #000000;
+    padding: 12px 20px;
+    border: black 2px solid;
+    cursor: pointer;
+    width: 161px;
+    font-weight: bold;
+}
+
+input[type=submit]:hover {
+    background-color: #000000;
+    color: white;
+}
+
+.container {
+    padding: 30px 45px;
+    border: black 1px solid;
+}
+.submit{
+    display: flex;
+    justify-content: right;
+}
+
+.container label{
+    color: #969696;
+    font-size: 13px      ;
+}

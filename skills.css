@@ -28,14 +28,14 @@ body{
 }
 
 .eng-but{
-    margin-right: -95px;
+    margin-right: -150px;
 }
 .but{
     text-decoration: none;
     color: black;
 }
 .slesh{
-    margin-right: -95px;
+    margin-right: -150px;
 }
 
 
@@ -245,7 +245,7 @@ body {
     width: var(--rating-size);
     height: var(--rating-size);
 
-    background: conic-gradient(#586e76 87%, #9fadb1 0 100%) !important;
+    background: conic-gradient(#7f969f 87%, #afc2c7 0 100%) !important;
 
     /* Basic style for the text */
     font-size: calc(var(--rating-size) / 4);
@@ -476,11 +476,11 @@ body {
 .ratingBalk{
     width: 260px;
     height: 15px;
-    background-color: rgba(131, 150, 159, 0.58);
+    background-color: rgb(175, 194, 199);
 }
 .ratingPercen{
     height: 15px;
-    background-color: #83969F;
+    background-color: #7f969f;
 }
 .ratingPercen.dutch{
     width: 250px;

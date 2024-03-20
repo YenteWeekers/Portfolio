@@ -38,14 +38,14 @@ body{
     padding-right: 3%;
 }
 .eng-but{
-    margin-right: -95px;
+    margin-right: -150px;
 }
 .but{
     text-decoration: none;
     color: black;
 }
 .slesh{
-    margin-right: -95px;
+    margin-right: -150px;
 }
 .logo{
     font-size: 35px;
@@ -178,8 +178,8 @@ body{
     align-items: center;
     width: 130px;
     height: 100%;
-    background: rgba(96, 118, 129, 0.9);
-    border: 3px solid rgba(85, 103, 112, 0.9);
+    background: rgb(125 150 161 / 90%);
+    border: 3px solid rgb(126 137 142 / 90%);
     border-radius: 11px;
     font-size: 15px;
     color: black;
@@ -204,7 +204,7 @@ body{
 }
 
 .seeMore a:nth-child(2)::before{
-    background: rgba(96, 118, 129, 0.9);
+    background: rgb(125 150 161 / 90%);
 }
 
 .seeMore a::before{
