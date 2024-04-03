@@ -216,7 +216,8 @@ body{
 
 .border .tooltiptext {
     visibility: hidden;
-    width: 120px;
+    width: 271px;
+    height: 75px;
     border: white solid 1px;
     background-color: rgba(255, 255, 255, 0.49);
     color: #fff;
@@ -233,6 +234,12 @@ body{
     visibility: visible;
 }
 .ani:hover .tooltiptext {
+    visibility: visible;
+}
+.combad:hover .tooltiptext {
+    visibility: visible;
+}
+.powerup:hover .tooltiptext {
     visibility: visible;
 }
 
@@ -327,6 +334,12 @@ body{
 }
 .ani{
     right: -38%;
+    position: relative;
+}
+.combad{
+    position: relative;
+}
+.powerup{
     position: relative;
 }
 
