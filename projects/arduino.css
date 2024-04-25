@@ -1,0 +1,179 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Sulphur Point', sans-serif;
+}
+
+body{
+    background: rgba(35, 91, 88, 0.16);
+    /*background-color: #ededed;*/
+    color: black;
+    overflow-x: hidden;
+}
+
+
+/* Project 2*/
+.pro_Head{
+    padding: 0 82px 0 42px;
+    display: flex;
+    align-items: center;
+}
+.pro_Head h1{
+    font-size: 35px;
+}
+.pro_line{
+    height: 2px;
+    background-color: #70848E;
+    margin: 42px;
+}
+.start{
+    width: 118px;
+}
+
+
+/*Project*/
+.Project{
+    height: 90vh;
+    display: flex;
+    background-image:linear-gradient(-90deg, rgba(32, 37, 41, 0.11) 0%, rgba(32, 37, 41, 0.54) 67.96%, rgba(32, 37, 41, 0.84) 100%),
+    url('../Img/arduinoImg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.Project_Info{
+    background-color: #83969F;
+    height: 150px;
+    width: 901px;
+    left: 25px;
+    top: 535px;
+    padding: 30px 70px;
+    position: absolute;
+}
+
+.Game_date{
+    display: flex;
+    gap: 60px;
+    line-height: 35px;
+}
+
+.Game_date h3{
+    letter-spacing: 1.7px;
+    max-width: 180px;
+}
+.Game_date h2{
+    font-size: 13px;
+    line-height: normal;
+}
+.thick{
+    font-family: GT Walsheim,Arial,gadget,sans-serif;
+    letter-spacing: 0.6px;
+    line-height: 20px;
+}
+
+
+
+
+
+.headingCon{
+    background-color: white;
+    padding: 120px 75px 10px 55px;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+.headingLine{
+    width: 90px;
+    height: 2px;
+    background-color: black;
+}
+.headingText{
+    font-weight: normal;
+    line-height: 30px;
+}
+
+
+/*goal*/
+.Goal{
+    height: 100vh;
+    width: 100vw;
+    background-color: #ffffff;
+    padding: 90px;
+    display: flex;
+    gap: 167px;
+    align-items: center;
+}
+.goal_assigment{
+    overflow-x: hidden;
+    max-width: 555px;
+}
+.Goal_text{
+    font-family: "Sulphur Point", sans-serif;
+    max-width: 677px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.Goal_text h2{
+    font-size: 35px;
+    padding-bottom: 35px;;
+    font-family: "Sulphur Point", sans-serif;
+
+}
+.Goal_text h3{
+    line-height: 28px;
+    max-width: 1090px;
+    font-family: Sulphur Point;
+    font-size: medium;
+}
+.goal_assigment img{
+    height: 372px;
+    width: 412px;
+    object-fit: cover;
+}
+
+
+/*Player*/
+.Player{
+    background-color: #ffffff;
+    padding-bottom: 35px;
+}
+.end{
+    width: 576px;
+}
+
+.body_player{
+    display: grid;
+    grid-template-columns: 78px 913px 73px 385px;
+    grid-template-rows:76px 15px 53px 265px;
+    grid-template-areas:". first first first " ". . . ." ". second . imgat" ". second imgwin .";
+}
+.first_textPlayer{
+    line-height: 28px;
+    max-width: 1090px;
+    margin-top: 15px;
+    font-family: Sulphur Point;
+    font-size: medium;
+    grid-area: first;
+}
+.second_textPlayer{
+    max-width: 750px;
+    line-height: 28px;
+    font-family: Sulphur Point;
+    font-size: medium;
+    grid-area: second;
+}
+
+.img_attack{
+    width: 271px;
+    height: 252px;
+    grid-area: imgat;
+}
+
+.img_attackWin{
+    z-index: 1;
+    transform: scaleX(-1);
+    grid-area: imgwin;
+}
+
+

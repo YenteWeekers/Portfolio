@@ -53,13 +53,17 @@ body{
 
 .Game_date{
     display: flex;
-    gap: 88px;
+    gap: 60px;
     line-height: 35px;
 }
 
 .Game_date h3{
     letter-spacing: 1.7px;
     max-width: 180px;
+}
+.Game_date h2{
+    font-size: 13px;
+    line-height: normal;
 }
 .thick{
     font-family: GT Walsheim,Arial,gadget,sans-serif;

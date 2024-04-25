@@ -25,6 +25,7 @@ body{
     align-items: center;
     z-index: 9;
     padding-right: 3%;
+    border-bottom: solid 2px #E7E7E7;
 }
 
 .eng-but{
@@ -44,8 +45,6 @@ body{
     color: black;     /*makes it white*/
     text-decoration: none;   /* takes away the underscore that you have with a link _____ */
     font-weight: 700;
-    z-index: 100;
-
 }
 
 .navbar a{
@@ -221,11 +220,37 @@ body {
 }
 
 
+
+
+
+
+
+
+
+
+
+/* Rating item */
+.rating {
+
+
+    background: var(--rating-color-default);
+    color: var(--rating-color-default);
+    width: var(--rating-size);
+    height: var(--rating-size);
+
+    /* Basic style for the text */
+    font-size: calc(var(--rating-size) / 3);
+    line-height: 1;
+}
+
+
+
+
 :root {
     --rating-size: 60px;
     --bar-size: 6px;
     --background-color: rgb(255, 255, 255);
-    --rating-color-default: rgba(0, 0, 0, 0.73);
+    --rating-color-default: conic-gradient(#7f969f 87%, #afc2c7 0 100%) !important;
     --rating-color-background: rgba(5, 39, 52, 0.66);
     --rating-color: rgba(255, 255, 255, 0.42);
 }
@@ -241,7 +266,7 @@ body {
     overflow: hidden;
 
     /*background: var(--rating-color-default);*/
-    color: var(--rating-color-default);
+    /*color: var(--rating-color-default);*/
     width: var(--rating-size);
     height: var(--rating-size);
 

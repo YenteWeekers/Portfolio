@@ -11,7 +11,7 @@
 </head>
 <body>
 <header class="header">
-    <a href="#" class="logo">Yente Weekers</a>
+    <a href="index.html" class="logo">Yente Weekers</a>
 
     <nav class="navbar">
         <a href="index.html" >Home</a>
@@ -24,7 +24,9 @@
     <a class="but" href="homeNL.html">NL</a>
 </header>
 
-
+<div id="round">
+    <div class="dot"></div>
+</div>
 
 
 <div class="main">
@@ -35,9 +37,9 @@
 
     <div id="myBtnContainer">
         <button class="btn on" onclick="filterSelection('all')"> Show all</button>
-        <button class="btn" onclick="filterSelection('nature')"> Web Development</button>
-        <button class="btn" onclick="filterSelection('cars')"> Game Development</button>
-        <button class="btn" onclick="filterSelection('people')"> Back end</button>
+        <button class="btn" onclick="filterSelection('web')"> Web Development</button>
+        <button class="btn" onclick="filterSelection('game')"> Game Development</button>
+        <button class="btn" onclick="filterSelection('back')"> Back end</button>
     </div>
 
 </div>
@@ -47,7 +49,7 @@
 <section class="projects_display">
     <div class="projectRow_con">
 
-        <div class="project_con cars">
+        <div class="project_con game">
             <a href="projects/fightgamePR.html" >
                 <img src="Img/Background_Dragongame.gif"  alt="cars"  >
                 <div class="project_conText">
@@ -57,17 +59,34 @@
             </a>
         </div>
 
-        <div class="projectCon project_con nature">
+        <div class="projectCon project_con web">
             <a href="projects/webshopPR.html" >
-                <img src="Img/ikopfiets.jpg" alt="cars"  class="image">
+                <img src="Img/webshopVK.png" alt="cars"  class="image">
                 <div class="project_conText">
                     <h1>Eaves</h1>
                     <p>Webshop, HTML,CSS & JS</p>
                 </div>
             </a>
         </div>
-    </div>
 
+        <div class="project_con projectCon web">
+        <div class="secondRow"></div>
+        </div>
+        <div class="project_con projectCon web">
+            <div class="secondRow"></div>
+        </div>
+
+        <div class="project_con projectCon back">
+            <a href="projects/arduino.html" >
+                <img src="Img/arduinoImg.png"  alt="cars"  class="image"  >
+                <div class="project_conText">
+                    <h1>The Vault</h1>
+                    <p>Back-end node.js, physical computing arduino</p>
+                </div>
+            </a>
+        </div>
+
+    </div>
 </section>
 
 

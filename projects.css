@@ -8,7 +8,7 @@
 }
 
 body{
-    background: rgba(35, 91, 88, 0.16);
+    /*background: rgba(35, 91, 88, 0.16);*/
     /*background-color: #ededed;*/
     color: black;
     overflow-x: hidden;
@@ -20,12 +20,13 @@ body{
     left: 0;
     width: 100%;
     padding: 20px 10%;        /*20px how big the nav balk is and 10% is how far is stands from the side*/
-    background-color: rgba(237, 237, 237, 0.91);
+    background-color: #f1f1f1;
     display: flex;          /*set the home projects skills about me under Yente.*/
     justify-content: space-between ;    /*zet yente en rest uitelkaar en zet het op even veel aftand van zijkant als yente dus 10%*/
     align-items: center;
     z-index: 9;
     padding-right: 3%;
+    border-bottom: solid 2px #E7E7E7;
 }
 .eng-but{
     margin-right: -150px;
@@ -141,12 +142,12 @@ h1 {
     margin-top: 100px;
 }
 .projectRow_con{
-    display: flex;
-    flex-direction: row;
+    display: grid;
+    grid-template-columns: 569px 507px;
+    /*grid-template-rows: 280px 125px ;*/
+
     width: 100%;
-    justify-content: center;
-    gap: 65px;
-    margin-bottom: 250px;
+    margin: 0 14% 125px;
 }
 
 .project_con {
@@ -178,13 +179,16 @@ h1 {
 .project_conText h1{
     font-size: 30px;
 }
-
+.secondRow{
+    height: 90px;
+    width: 100vw;
+}
 
 
 
 .projectCon {
-    position: relative;
-    top: 65px;
+    /*position: relative;*/
+    /*top: 65px;*/
 }
 /* Content */
 .content {
@@ -213,142 +217,4 @@ h1 {
     background-color: #666;
     color: white;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/** {*/
-/*    box-sizing: border-box;*/
-/*}*/
-
-/*body {*/
-/*    margin: 0;*/
-/*    font-family: Arial, Helvetica, sans-serif;*/
-/*}*/
-
-/*.projectsChoise {*/
-/*    text-align: center;*/
-/*    padding: 32px;*/
-/*}*/
-
-/*.row {*/
-/*    display: -ms-flexbox; !* IE 10 *!*/
-/*    display: flex;*/
-/*    -ms-flex-wrap: wrap; !* IE 10 *!*/
-/*    flex-wrap: wrap;*/
-/*    padding: 0 4px;*/
-/*}*/
-
-/*!* Create two equal columns that sits next to each other *!*/
-/*.column {*/
-/*    -ms-flex: 50%; !* IE 10 *!*/
-/*    flex: 50%;*/
-/*    padding: 0 4px;*/
-/*}*/
-
-/*.column img {*/
-/*    margin-top: 8px;*/
-/*    vertical-align: middle;*/
-/*}*/
-
-/*!* Style the buttons *!*/
-/*.btn {*/
-/*    border: none;*/
-/*    outline: none;*/
-/*    padding: 10px 16px;*/
-/*    background-color: #f1f1f1;*/
-/*    cursor: pointer;*/
-/*    font-size: 18px;*/
-/*}*/
-
-/*.btn:hover {*/
-/*    background-color: #ddd;*/
-/*}*/
-
-/*.btn.active {*/
-/*    background-color: #666;*/
-/*    color: white;*/
-/*}*/
-
-
-
-
-/*.project_img {*/
-/*    position: relative;*/
-/*    margin: 0 auto;*/
-/*}*/
-
-/*.project_img img {vertical-align: middle;}*/
-
-/*.project_img .project_text {*/
-/*    position: absolute;*/
-/*    bottom: 0;*/
-/*    background: rgb(0, 0, 0); !* Fallback color *!*/
-/*    background: rgba(0, 0, 0, 0.5); !* Black background with 0.5 opacity *!*/
-/*    color: #f1f1f1;*/
-/*    width: 100%;*/
-/*    padding: 20px;*/
-/*}*/
-
-
-
-/*.projectIMG {*/
-/*    position: relative;*/
-/*}*/
-
-/*.image {*/
-/*    display: block;*/
-/*    width: 100%;*/
-/*    height: auto;*/
-/*}*/
-
-/*.overlay {*/
-/*    position: absolute;*/
-/*    bottom: 0;*/
-/*    background: rgb(0, 0, 0);*/
-/*    background: rgba(0, 0, 0, 0.5); !* Black see-through *!*/
-/*    color: #f1f1f1;*/
-/*    width: 100%;*/
-/*    transition: .5s ease;*/
-/*    opacity:0;*/
-/*    color: white;*/
-/*    font-size: 13px;*/
-/*    padding: 20px;*/
-/*    text-align: center;*/
-/*}*/
-
-/*.projectIMG:hover .overlay {*/
-/*    opacity: 1;*/
-/*}*/
 
